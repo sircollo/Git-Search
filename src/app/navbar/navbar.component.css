@@ -11,3 +11,7 @@ a{
 .nav-link{
   margin-left: 50px;
 }
+.nav-link:hover{
+  text-decoration: underline;
+  /* text-decoration: wavy; */
+}
