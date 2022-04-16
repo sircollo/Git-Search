@@ -1,6 +1,6 @@
 <form action="" class="search-bar">
-	<input type="search" name="search" pattern=".*\S.*" required>
-	<button class="search-btn" type="submit">
+	<input type="search" name="search" (keyup.enter)="search()"name="searchName" pattern=".*\S.*" required>
+	<button class="search-btn" type="submit" (click)="search()">
 		<span>Search</span>
 	</button>
 </form>
