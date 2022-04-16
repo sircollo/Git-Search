@@ -7,13 +7,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchComponent } from './search/search.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserComponent } from './user/user.component';
+import { RepositoriesComponent } from './repositories/repositories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SearchComponent,
-    FooterComponent
+    FooterComponent,
+    UserComponent,
+    RepositoriesComponent
   ],
   imports: [
     BrowserModule,
