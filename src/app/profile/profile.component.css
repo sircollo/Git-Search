@@ -31,6 +31,10 @@ img{
   width: 268x;
   height: 268px;
 }
+.all-details{
+  /* text-align: center; */
+  margin-left: 20px;
+}
 h2{
   padding-top: 20px;
 }
