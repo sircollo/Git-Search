@@ -12,6 +12,7 @@ import { UserComponent } from './user/user.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GitSearchService } from './services/git-search.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { GitSearchService } from './services/git-search.service';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [GitSearchService],
   bootstrap: [AppComponent]
