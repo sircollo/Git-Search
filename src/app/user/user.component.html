@@ -1,9 +1,12 @@
+
+<!-- end of form -->
+
 <div class="container">
   <div class="row">
     <div class="col-md-5" *ngIf="profile">
       <div class="profile">
       <img src={{profile.avatar_url}} alt="" class="img-fluid rounded-circle">
-      <h2>Collins Sirwani</h2>
+      <h2>{{profile.name}}</h2>
     </div>
   </div>
     <div class="col-md-7">
@@ -29,4 +32,20 @@
       </div>      
     </div>
   </div>
+</div>
+<div class="container">
+  <div class="repos">
+    <h2>Repos</h2>
+    <div >
+       <!-- {{repo.name}}</li> -->
+       <div class="row" >
+         <div class="col-md-3" *ngFor="let repo of repos">
+            {{repo.name.toUpperCase()}}
+         </div>
+
+       </div>
+    </div>
+
+  </div>
+
 </div>

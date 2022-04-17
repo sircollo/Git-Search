@@ -23,12 +23,14 @@ li{
   list-style: none;
   padding-top: 5%;
 }
-/* .profile-details{
-  padding-left: 5px;
-} */
+
 img{
   padding-top: 10px;
 }
 h2{
   padding-top: 20px;
 }
+.repos{
+  text-align: center;
+}
+/* form */

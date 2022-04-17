@@ -13,6 +13,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GitSearchService } from './services/git-search.service';
 import { FormsModule } from '@angular/forms';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -22,14 +23,15 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     UserComponent,
     RepositoriesComponent,
-    ProfileComponent
+    ProfileComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [GitSearchService],
   bootstrap: [AppComponent]
