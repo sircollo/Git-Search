@@ -1,9 +1,19 @@
+<div class="formSearch">
+<form action="" class="search-bar form-group">
+	<input type="search" name="search"pattern=".*\S.*"required (keyup.enter)="getUser(userName)"required [(ngModel)]="userName" name="userName">
+	<button class="search-btn" type="submit" (keyup.enter)="getUser(userName)">
+		<span>Search</span>
+	</button>
+</form>
+</div>
+<!-- form -->
 <div class="container">
   <div class="row">
     <div class="col-md-5">
       <div class="profile">
-      <!-- <img src="{{profile.avatar_url}}" alt="" class="img-fluid rounded-circle"> -->
-      <!-- <h2>Collins Sirwani</h2> -->
+      <img src="{{profile.avatar_url}}" alt="" class="img-fluid rounded-circle">
+      <h2>{{profile.name}}</h2>
+      <em><p>{{profile.login}}</p></em>
     </div>
   </div>
     <div class="col-md-7">
@@ -11,19 +21,19 @@
         <h4>User Details</h4> 
         <ul>
           <li>
-            <!-- {{profile.name}} -->
+            {{profile.name}}
           </li>
           <li>
-            <!-- Followers: 2 -->
+            {{profile.followers}}
           </li>
           <li>
-            <!-- Following: 2 -->
+            {{profile.following}}
           </li>
           <li>
-            <!-- Repositories: 20 -->
+            Repositories: 20
           </li>
           <li>
-            <!-- Github: <a href="https://github.com/sircollo">sircollo</a> -->
+            Github: <a href="https://github.com/sircollo">sircollo</a>
           </li>
         </ul>
       </div>      
