@@ -4,6 +4,7 @@ export class User {
     public avatar_url:string,
     public username:any,
     public followers:number,
-    public following:number
+    public following:number,
+    public location:string,
   ){}
 }
