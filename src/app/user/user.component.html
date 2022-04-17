@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-5" *ngIf="profile">
       <div class="profile">
-      <img src="assets/profile-pic.jpeg" alt="" class="img-fluid rounded-circle">
+      <img src={{profile.avatar_url}} alt="" class="img-fluid rounded-circle">
       <h2>Collins Sirwani</h2>
     </div>
   </div>
@@ -11,16 +11,16 @@
         <h4>User Details</h4> 
         <ul>
           <li>
-            Username: sircollo
+            Username:{{profile.login}}
           </li>
           <li>
-            Followers: 2
+            Followers: {{profile.followers}}
           </li>
           <li>
-            Following: 2
+            Following: {{profile.following}}
           </li>
           <li>
-            Repositories: 20
+            Repositories: {{profile.public_repos}}
           </li>
           <li>
             Github: <a href="https://github.com/sircollo">sircollo</a>

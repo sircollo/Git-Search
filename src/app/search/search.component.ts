@@ -1,25 +1,25 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { User } from '../classes/user';
+// import { User } from '../classes/user';
+import { GitSearchService } from '../services/git-search.service';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  @Output()
-  searchData = new EventEmitter<any>()
+  users!:String[]
+  constructor(private gitSearchService:GitSearchService) { }
 
-  userProfile = new User("","",0,0)
-  searchUserName: any
-
-  search(){
-    this.searchData.emit(this.searchUserName);
-    this.userProfile = new User("","",0,0)
-    this.searchUserName = ""  //clear form field
-  }
-  constructor() { }
+ getUsers(){
+   this.gitSearchService.getUserProfile().subscribe((profile)=>{ 
+     console.log(profile)
+   })
+ }
+ 
 
   ngOnInit(): void {
   }
 
 }
+
+

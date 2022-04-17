@@ -1,10 +1,11 @@
 <form action="" class="search-bar">
-	<input type="search" name="search" (keyup.enter)="search()"name="searchName" pattern=".*\S.*" required>
-	<button class="search-btn" type="submit" (click)="search()">
+	<input type="search" name="search"pattern=".*\S.*" required>
+	<button class="search-btn" type="submit" (click)="getUsers()">
 		<span>Search</span>
 	</button>
 </form>
 
+<!-- <button (click)="getUsers()">llo</button>  -->
+<app-user></app-user>
 
-
-
+<!-- (click)="getUsers()"/ -->

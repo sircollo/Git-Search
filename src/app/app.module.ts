@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { UserComponent } from './user/user.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { ProfileComponent } from './profile/profile.component';
+import { GitSearchService } from './services/git-search.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { ProfileComponent } from './profile/profile.component';
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [GitSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
