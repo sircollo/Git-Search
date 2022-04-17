@@ -14,6 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { GitSearchService } from './services/git-search.service';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from './date.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DatePipe } from './date.pipe';
     UserComponent,
     RepositoriesComponent,
     ProfileComponent,
+    HighlightDirective,
     
   ],
   imports: [
