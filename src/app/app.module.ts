@@ -15,6 +15,8 @@ import { GitSearchService } from './services/git-search.service';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from './date.pipe';
 import { HighlightDirective } from './highlight.directive';
+// import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { HighlightDirective } from './highlight.directive';
     RepositoriesComponent,
     ProfileComponent,
     HighlightDirective,
+    // AboutComponent,
+    NotFoundComponent,
     
   ],
   imports: [

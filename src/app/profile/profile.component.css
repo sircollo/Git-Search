@@ -175,3 +175,15 @@ body {
 .search-bar input:valid + .search-btn:active {
 	transform: translateY(1px);
 }
+
+/* repos */
+.repos{
+  padding-top: 5%;
+}
+.list-group-item{
+  padding-top: 1%;
+  margin: 1%;
+  }
+  .list-group-item:hover {
+    transform: scale(1.1); 
+  }
