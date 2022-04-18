@@ -7,8 +7,8 @@ import { AboutComponent } from './about/about.component';
 import {NotFoundComponent } from './not-found/not-found.component'
 
 const routes: Routes = [
-  {path: 'repositories', component:RepositoriesComponent},
   {path: 'profiles', component:ProfileComponent},
+  {path: 'repositories', component:RepositoriesComponent},  
   {path: 'about', component:AboutComponent},
   {path: '**',component:NotFoundComponent}
   
